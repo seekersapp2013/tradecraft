@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>Vego - Vegetable App</title>
+
+<!--CDN Here-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/accordion.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/accordion.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/ad.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/api.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/breadcrumb.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/button.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/card.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/checkbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/checkbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/colorize.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/comment.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/container.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/dimmer.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/divider.min.css"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/divider.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/dropdown.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/embed.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/feed.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/flag.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/form.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/form.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/grid.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/header.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/icon.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/input.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/item.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/label.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/list.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/list.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/loader.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/menu.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/message.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/modal.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/modal.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/nag.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/nag.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/popup.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/popup.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/progress.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/progress.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/rail.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/rating.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/rating.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/reset.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/reveal.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/search.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/search.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/segment.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/shape.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/shape.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/sidebar.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/sidebar.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/site.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/site.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/state.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/statistic.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/step.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/sticky.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/sticky.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/tab.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/tab.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/table.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/transition.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/transition.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/video.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/video.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/visibility.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+<!--themes and icons-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/basic/assets/fonts/icons.eot
+">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/basic/assets/fonts/icons.svg">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/basic/assets/fonts/icons.ttf
+">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/basic/assets/fonts/icons.woff
+">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/default/assets/fonts/icons.eot
+">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/default/assets/fonts/icons.otf
+">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/default/assets/fonts/icons.svg
+">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/default/assets/fonts/icons.ttf
+">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/default/assets/fonts/icons.woff
+">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/default/assets/fonts/icons.woff2
+">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/default/assets/images/flags.png
+">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/github/assets/fonts/octicons-local.ttf
+">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/github/assets/fonts/octicons.woff
+">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/material/assets/fonts/icons.eot
+">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/material/assets/fonts/icons.svg">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/material/assets/fonts/icons.ttf">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/themes/material/assets/fonts/icons.woff
+">
+<!-- CDN Ends Here-->
+  <link rel="stylesheet" type="text/css" href="strength.css">
+
+
+  <script src="assets/library/jquery.min.js"></script>
+  
+  <style type="text/css">
+    body {
+      background-image: url("assets/images/bg.png"); 
+    }
+    body > .grid {
+      height: 100%;
+    }
+    
+    .column {
+      max-width: 450px;
+    }
+    .right{
+      float: right;
+      color: white;
+    }
+  </style>
+  <script>
+  $(document)
+    .ready(function() {
+      $('.ui.form')
+        .form({
+          fields: {
+            email: {
+              identifier  : 'email',
+              rules: [
+                {
+                  type   : 'empty',
+                  prompt : 'Please enter your e-mail'
+                },
+                {
+                  type   : 'email',
+                  prompt : 'Please enter a valid e-mail'
+                }
+              ]
+            },
+            password: {
+              identifier  : 'password',
+              rules: [
+                {
+                  type   : 'empty',
+                  prompt : 'Please enter your password'
+                },
+                {
+                  type   : 'length[6]',
+                  prompt : 'Your password must be at least 6 characters'
+                }
+              ]
+            }
+          }
+        })
+      ;
+    })
+  ;
+  </script>
+<!--drawer menu-->
+    <link href="sandbox.css" rel="stylesheet">
+  <link href="drawer.min.css" rel="stylesheet">
+<style>
+form {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+</style>
+</head>
+<body class="drawer drawer--left">
+<header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><a class="drawer-brand" href="index.html">Vego</a></li>
+        <li><a class="drawer-menu-item" href="signup.html">Sign Up</a></li>
+        <li><a class="drawer-menu-item" href="login.html">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+<!--Content Area-->
+<div class="ui middle aligned center aligned grid">
+  <div class="column">
+        <img src="assets\images\vego.png" class="image">
+      
+      <div class="content">
+      </div>
+    <form class="ui large form" accept-charset="utf-8">
+      <div>
+        <div class="field">
+          <div class="ui dividing">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="text" name="email" placeholder="Username">
+          </div>
+          </div>
+        </div>
+        <br>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input type="password" name="password" placeholder="Password" id="myPassword">
+          </div>
+     <br>
+     <br>
+          <a href="#" class="right">Forget your password</a>
+        </div>
+        <br>
+        <br>
+        <div class="ui fluid large yellow submit button">Sign In</a></div>
+      </div>
+
+      <div class="ui error message"></div>
+  <div class="ui arrow left"></div>
+
+    </form>
+<br>
+<br>
+    <div class="right">
+      Don't have an account <a href="../examples\signup.html" class="right">Sign Up</a>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="strength.js"></script>
+<script type="text/javascript" src="js.js"></script>
+
+<script>
+
+
+
+
+$(document).ready(function($) {
+	
+$('#myPassword').strength({
+            strengthClass: 'strength',
+            strengthMeterClass: 'strength_meter',
+            strengthButtonClass: 'button_strength',
+            strengthButtonTextToggle: 'Hide Password'
+        });
+
+});
+
+</script>
+<!--menu drawer-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+  <script src="drawer.min.js" charset="utf-8"></script>
+  <script>
+    $(document).ready(function() {
+      $('.drawer').drawer();
+    });
+  </script>
+
+</body>
+
+</html>
